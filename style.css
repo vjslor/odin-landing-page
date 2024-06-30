@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+font-family: Roboto, sans-serif;
+    padding: 0 48;
+    margin: 0;
+}
+
+.header,
+.main1,
+.footer {
+    background-color: #1F2937;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+ul {
+    list-style: none;
+    margin-right: 24px;
+    display: inline-flex;
+    gap: 12px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.right-links {
+    color: #E5E7EB;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.main1,
+.main2,
+.main3,
+.main4 {
+    display: flex;
+}
+
+.main1 {
+    flex: 1;
+    justify-content: space-between;
+    padding: 24 48;
+}
+
+.main1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.awesome {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    text-wrap: wrap;
+    padding-left: 48px;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-wrap: wrap;
+    padding-left: 48px;
+}
+
+.first-button {
+padding-left: 48px;}
+
+.button1, .button2 {
+background: #3882F6;
+color: white;}
+
+.main1-right {
+text-align: center;}
