@@ -1,10 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
     font-family: Roboto, sans-serif;
-    padding: 0 48;
     margin: 0;
+    min-height: 100%;
 }
 
 .header,
@@ -15,7 +15,11 @@ body {
 
 .header {
     display: flex;
+    flex: 0;
     justify-content: space-between;
+    padding-top: 8px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .logo {
@@ -25,9 +29,9 @@ body {
 
 ul {
     list-style: none;
-    margin-right: 24px;
     display: inline-flex;
     gap: 12px;
+    color: white;
 }
 
 a:link {
@@ -42,16 +46,17 @@ a:link {
 
 .content {
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
 }
 
 .main1 {
-display: flex;
-    flex: 1;
+    display: flex;
     justify-content: space-between;
-    padding: 24 48;
+    gap: 16px;
+    padding: 48px 100px;
 }
 
 .main1-left {
@@ -59,6 +64,7 @@ display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    width: 500px;
 }
 
 .awesome {
@@ -66,32 +72,30 @@ display: flex;
     font-weight: extra-bold;
     color: #F9FAF8;
     text-wrap: wrap;
-    padding-left: 48px;
 }
 
 .subtext {
     font-size: 18px;
     color: #E5E7EB;
     text-wrap: wrap;
-    padding-left: 48px;
-}
-
-.first-button {
-    padding-left: 48px;
 }
 
 .button1,
 .button2 {
     background: #3882F6;
     color: white;
-border-radius: 5px;
+    border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .button2 {
-border-color: white;}
+    border-color: white;
+}
 
 .main1-right {
-    text-align: center;
+    display: flex;
+    justify-content: left;
+
 }
 
 .main2 {
@@ -110,42 +114,78 @@ border-color: white;}
 .cards {
     display: flex;
     gap: 18px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-display: flex;
-justify-content: center;
-align-items: center;}
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: block;
+    margin: auto;
+}
 
 .caption {
-text-align: center;
-text-wrap: wrap;
-font-size: 12px;}
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 12px;
+    padding-top: 8px;
+}
 
 .main3 {
     display: flex;
-justify-content: center;
-background-color: #E5E7EB;
-font-size: 36px;
-font-weight: light;
-font-style: italic;
-color: #1F2937;
-padding: 48px;}
+    justify-content: center;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+    padding: 48px;
+}
 
 .tolkien {
-font-size: 16px;
-font-weight: bold;
-text-align: right;}
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
 
 .main4 {
-display: flex;
-justify-content: space-evenly;
-background-color: #3882F6;
-color: white;
-margin: 48px 72px;
-padding: 24px 48px;
-border-radius: 15px;}
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882F6;
+    color: white;
+    margin: 48px 100px;
+    padding: 24px 48px;
+    gap: 72px;
+    border-radius: 15px;
+}
 
+.action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+}
 
+.call {
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.button2 {
+    display: block;
+    margin: auto;
+}
 
+.footer {
+    display: flex;
+    flex: 0;
+}
